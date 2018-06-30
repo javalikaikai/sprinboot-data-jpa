@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    password: 123456
+    username: root
+    url: jdbc:mysql://47.105.103.45:3306/mybatis
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+#启动的时候更新或者创建数据表结构
+      ddl-auto: update
+#控制台是否打印sql
+    show-sql: true
