@@ -10,3 +10,16 @@ spring:
       ddl-auto: update
 #控制台是否打印sql
     show-sql: true
+#开启监控功能
+management:
+  security:
+    enabled: false    #开启监控功能
+  context-path: /manager  #定制管理端点根访问路径
+  port: 8181   #定制管理端点端口号
+endpoints:
+  beans:
+    id: mybean    #定义beans端点的id
+    path: /bean   #定义beans端点的访问路径
+   
+
+  
